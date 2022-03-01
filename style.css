@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+min-height: 100vh;
+color: #fff;
+
+}
+form,.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    min-height: 25vh;
+}
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.button-form,.input-form{
+        padding: 10px 20px ;
+        font-size: 1.5rem;
+     
+        
+}
+.input-form{
+    width: 300px;
+    border: none;
+    background-color: none;
+    outline: none;
+}
+.button-form{
+    border: none;
+    background-color: #ea48ff;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .3s all linear;
+}
+.button-form:hover{
+    border: none;
+    background-color: #fff;
+    color: #ea48ff;
+    outline: none;
+    cursor: pointer;
+    
+
+}
+.todo-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    flex-direction: column;
+}
+
+.todo{
+    display: flex;
+    width: 350px;
+    color: #000;
+    background-color: #fff;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.todo li{
+    flex: 22;
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
+    
+}
+.todo button{
+    background-color: rgb(35, 214, 35);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.todo button:last-child{
+    background-color: rgb(214, 62, 35);
+}
+.select{
+    margin-left:20px ;
+    position: relative;
+   
+}
+select{
+    appearance: none;
+    outline: none;
+    padding: 15px 45px;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 65px;
+    cursor: pointer;
+}
+select option{
+   
+    margin-left: 20px;
+}
+
+.select::after{
+    position: absolute;
+ content: "\25BC";
+ top: 0;
+ right: 0px;
+ 
+ background-color: #E100FF;
+ padding: 14px;
+ pointer-events: none;
+
+   
+}
+
+
+.complete{
+    opacity: .5;
+    text-decoration: line-through;
+    text-decoration-color: #000;
+    transition: all .3s linear;
+}
+.fa-check,.fa-trash{
+    pointer-events: none;
+
+}
